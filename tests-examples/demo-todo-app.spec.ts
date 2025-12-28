@@ -13,7 +13,7 @@ const TODO_ITEMS = [
 test.describe('New Todo', () => {
   test('should allow me to add todo items in the list', async ({ page }) => {
     // create a new todo locator
-    const newTodo = page.getByPlaceholder('What needs to be done?');
+    const newTodo = page.getByPlaceholder('What needs to be done here?');
 
     // Create 1st todo.
     await newTodo.fill(TODO_ITEMS[0]);
